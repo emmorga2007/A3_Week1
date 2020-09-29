@@ -1,0 +1,26 @@
+body {
+  font-size: "Arial", "helvetica", sans-serif;
+  font-size: 16px;
+  background-color: salmon;
+}
+
+nav {
+  margin: 0;
+}
+nav .nav-li {
+  display: inline-block;
+  margin: 0 10px;
+}
+nav .nav-li a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  background-color: black;
+  color: white;
+}
+
+/*# sourceMappingURL=master.css.map */

@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../sass/modules/_main.scss","../sass/modules/_vars.scss","../sass/modules/_nav.scss","../sass/modules/_footer.scss"],"names":[],"mappings":"AAAA;EACI,WCEQ;EDDR,WCEa;EDAb,kBCHY;;;ACDhB;EACI;;AAEA;EACI;EAAuB;;AACvB;EAAI;EAAiB;;;ACL7B;EACI;EACA;EACA;EAEA","file":"master.css"}
