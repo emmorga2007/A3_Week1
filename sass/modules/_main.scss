@@ -4,3 +4,18 @@ body{
 
     background-color: $main-bg-color;
 }
+
+.box{
+    width: 30px;
+    height: 30px;
+
+    @include roundCorners(20px);
+
+}
+
+.box2{
+    width: 30px;
+    height: 30px;
+
+    @include roundCorners(50%);
+}
