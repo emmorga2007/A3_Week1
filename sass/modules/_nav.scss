@@ -1,0 +1,15 @@
+nav{
+    margin: 0;
+
+    .nav-li {
+        display: inline-block; margin: 0 10px;
+        background-color: Blue;
+
+        @include roundCorners(8px);
+        @include addPadding(0 5px 8px 0);
+
+        a { cursor: pointer; text-decoration: none;} 
+    
+    }
+
+}
