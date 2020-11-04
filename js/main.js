@@ -1,13 +1,25 @@
+import { fetchData } from "./modules/DataMiner.js";
+
 (() => {
     // start with a fetch call
-    fetch('./DataSet.json')
-        .then(res => res.json())
-        .then(data => {
-            //this is our data (DataSet.json)
-            // coverted to a plain Javascript object
-            handleDataSet(data);
-        })
-    .catch((error) => console.log(error));
+    // async function fetchData(datasource) {
+    //     let resource = await fetch(datasource).then(response => {
+    //         // !== is a bang operator means "does not equal"
+    //         if (response.status !==200){
+    //             throw new Error(`Didn't work, Error ${response.status}`);
+    //             //${response.status} will put in the error code, ex 404.  
+    //         }
+    //         return response;
+    //         //this kills the fetching, tells client there was an error
+    //     })
+        
+
+    //      // if we get success, then we can retunr back our resource after we parse it into plain js
+    //     let dataset = await resource.json();
+
+    //     return dataset;
+    // }
+
 
     // this receives the data payload from our AJAX request, parses it (turns the returned JSON object back into a plain JavaScript object) and renders the data to our view (the markup in index.html)
     function handleDataSet(data) {
@@ -33,4 +45,7 @@
 
         console.log(data);
     }
+
+    fetchData('./DataSet.json').then(data => handleDataSet(data)).catch(err => console.log(err));
+
 })();
