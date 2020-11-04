@@ -1,4 +1,3 @@
-module.export = {
-    message: "I am the nav mod"
-    // this is just an object so we can import something
+module.exports = {
+    message: "i am the nav module"
 }
